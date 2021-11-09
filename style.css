@@ -24,65 +24,47 @@
 body
 {
     background-image: linear-gradient(90deg, #073805, #207c03);
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Lato',sans-serif;
+    font-weight: 900;
     display: flex;          /*coloca tudo em linha*/
    flex-direction: column; /*coloca tudo em coluna*/
     align-items: center;    /*alinha horizontalmente*/
     justify-content: center;/*alinha tudo verticalmente com uso de height:100vh*/
-   height: 100vh;
+    height: 100vh;
     overflow: hidden; /*BARRA DE SCROLL DOWN, HIDDEN ESCONDIDA*/
     margin: 0;
     overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
+}
+
+.chave{
+    border: 1px solid #999;
+    background-color: #eee;
+    box-shadow:  1px 1px 3px rgba (0,0,0,0.1);
+    align-items: center;
+    font-size: 20px;
     padding: 20px;
+    flex-direction: column;
+    margin: 10px;
+    font-weight: bold;
+    min-width: 150px;
+    position: relative;
 }
 
-.main{
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
-    padding: 50px 20px;
+.chave small{
+    position: absolute;
+    top :-24px;
+    left: 0;
     text-align: center;
-    max-width: 100%;
-    width: 800px;
+    width: 100%;
+    color: #555;
+    font-size: 14px;
 }
 
-h3{
-    margin: 0;
-    opacity: 0.5;
-    letter-spacing: 2px;
-}
-
-.joke {
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    line-height: 40px;
-    margin: 50px auto;
-    max-width: 600px;
-}
-
-.btn{
-    background-color: #0a775c;
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
-    padding: 14px 40px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.btn:focus{
-    outline: 0;
-}
-.btn:active{
-    transform: scale(0.9);
-}
 
 
 @media(max-width: 480px)        /*para ecras mais pequenos*/
 {
     body{
-        height: auto;
         overflow:visible;
     }
 
@@ -90,26 +72,19 @@ h3{
     {
         display: none;
     };
-    .joke {
-        font-size: 10px;
-    
-    }
+
 }
 
 @media (max-width: 800px)
 {
     body{
-        height: auto;
         overflow:visible;
     }
     footer 
     {
         display: none;
     };
-    .joke {
-        font-size: 10px;
-      
-    }
+  
 
 }
 
@@ -127,16 +102,14 @@ footer{
     font-weight: 700;
 }
 
-#cabeca a{
+footer a{
    color: #171a13;  /*cor dos links a preto*/
    text-decoration: none;     /*retira o sublinhado dos links*/
 }
 
-#cabeca a:hover{
+footer a:hover{
     color: rgb(255, 196, 0);
 }
-#cabeca{
-    color:darkgreen;
-}
+
 
 
