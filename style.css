@@ -21,13 +21,14 @@
 }
 
 /*alinhar conteudos ao centro*/
+
 body
 {
     background-image: linear-gradient(90deg, #073805, #207c03);
     font-family: 'Lato',sans-serif;
     font-weight: 900;
     display: flex;          /*coloca tudo em linha*/
-   flex-direction: column; /*coloca tudo em coluna*/
+  /* flex-direction: column; /*coloca tudo em coluna*/
     align-items: center;    /*alinha horizontalmente*/
     justify-content: center;/*alinha tudo verticalmente com uso de height:100vh*/
     height: 100vh;
@@ -36,10 +37,12 @@ body
     overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
 }
 
+
 .chave{
     border: 1px solid #999;
     background-color: #eee;
     box-shadow:  1px 1px 3px rgba (0,0,0,0.1);
+    display: inline-flex;
     align-items: center;
     font-size: 20px;
     padding: 20px;
