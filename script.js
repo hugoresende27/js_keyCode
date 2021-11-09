@@ -1,28 +1,24 @@
 const ins = document.getElementById('inserir')
 
-window.addEventListener ('keydown', (e) => {        /*EVENTO COM A JANELA (window.) 'keydown' cada tecla pressionada */
+window.addEventListener ('keydown', (event) => {        /*EVENTO COM A JANELA (window.) 'keydown' cada tecla pressionada */
     //console.log(e)      /*console log de  */
     /*
     KeyboardEvent {isTrusted: true, key: 'a', code: 'KeyA', location: 0, ctrlKey: false, …}
     */
    ins.innerHTML = `
         <div class="chave">
-            ${e.chave === ' ' ? 'Space' : e.chave}
+            ${event.key === ' ' ? 'Space' : event.key}
             <small>event.key</small>
         </div>
 
         <div class="chave">
-            65
+            ${event.keyCode}
             <small>event.keyCode</small>
         </div>
 
         <div class="chave">
-            keyA
+            ${event.code}
             <small>event.code</small>
         </div>
-
-        <div class="chave">
-            pressiona uma tecla
-            <small>event.code</small>
    `
 })
